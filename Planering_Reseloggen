@@ -1,0 +1,49 @@
+Sekvensprogrammering
+Listor
+Komplexare klasser
+
+I den här övningen behöver du hantera inmatning och utmatning. Programmet är ett system för att logga resor som gjorts.
+Det ska gå att lägga till resmål - användaren får ange namnet på en plats som den besökt
+Det ska gå att ta bort resmål
+Det ska gå att visa alla resmål som lagts till
+Det ska gå att rensa reseloggen
+Det ska gå att avsluta programmet genom att exempelvis trycka på Q
+Lagom längd på programmet kan vara 50 kodrader
+För att lösa uppgiften behöver du använda dig av följande:
+Utskrift till konsolen
+Inmatning av data, spara variabler i korrekt datatyp
+Selektion, if eller switch för meny
+Loop som accepterar menyval tills användaren väljer att avsluta programmet
+Kodblock, tänk på att det är viktigt var du deklarerar dina variabler
+List<T>-klassen och dess viktigaste metoder
+
+
+
+
+
+
+
+
+class Destination
+string variabel för resmål
+
+- Det ska gå att lägga till resmål - användaren får ange namnet på en plats som den besökt
+
+- Det ska gå att ta bort resmål
+
+- Det ska gå att visa alla resmål som lagts till
+
+- Det ska gå att rensa reseloggen
+
+- Det ska gå att avsluta programmet genom att exempelvis trycka på Q
+
+
+loop som loopar igenom menyn
+
+Skapa en meny (switch) som ska innehålla följande val:
+ Lägg till resmål 
+ Ta bort resmål 
+ Visa alla resmål 
+ Rensa reseloggen
+ Avsluta programmet 
+
