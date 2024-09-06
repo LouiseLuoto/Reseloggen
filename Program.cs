@@ -4,18 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        
-    
         bool isRunning = true;
-
         List<Destination> list = new List<Destination>();
-
         while (true)
         {
             System.Console.WriteLine("Gör ett val i menyn");
             System.Console.WriteLine("[L]ägg till resmål");
             System.Console.WriteLine("[T]a bort resmål");
             System.Console.WriteLine("[V]isa alla resmål");
+            System.Console.WriteLine("[S]ortera resmål");
             System.Console.WriteLine("[R]ensa reselogg");
             System.Console.WriteLine("[A]vsluta");
 
@@ -35,13 +32,22 @@ class Program
                     var d = new Destination(name, description, grade, year);
                     list.Add(d);
                     break;
-                case ("t"): 
+                case "t": 
                     Console.WriteLine("Vilket resmål vill du ta bort? ");
-                    .RemoveAt(Console.ReadLine());
+                    
+                    for (int i = 0; i<list.Count; i++)
+                    {
+                        Console.WriteLine($"{i+1}, plats: {list[i].name}, år:  {list[i].year}, betyg: {list[i].grade}  ");
+                    }
+                    Console.Write("Skriv in siffran för de resmål du vill ta bort: ");
+                    int input = int.Parse(Console.ReadLine());
+                    list.RemoveAt(input - 1);
                     break;
                 case ("v"):
                     foreach( Destination x in list)
                         System.Console.WriteLine(x.name);
+                    break;
+                case ("s"):                                 
                     break;
                 case ("r"): 
                     System.Console.WriteLine("[R]");
@@ -52,15 +58,6 @@ class Program
             }
 
         }
-
-
-
-
-        
-
-
-
-
 
     }
 }
